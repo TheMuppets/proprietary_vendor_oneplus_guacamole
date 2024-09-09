@@ -146,10 +146,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamole/proprietary/odm/firmware/barca_alarm_ring_RTP_120.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_alarm_ring_RTP_120.bin \
     vendor/oneplus/guacamole/proprietary/odm/firmware/barca_incoming_ring_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_incoming_ring_RTP_121.bin \
     vendor/oneplus/guacamole/proprietary/odm/firmware/barca_notice_ring_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_notice_ring_RTP_122.bin \
-    vendor/oneplus/guacamole/proprietary/odm/lib64/camera/com.qti.sensor.imx471.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx471.so \
-    vendor/oneplus/guacamole/proprietary/odm/lib64/camera/com.qti.sensor.imx481.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx481.so \
-    vendor/oneplus/guacamole/proprietary/odm/lib64/camera/com.qti.sensor.imx586.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx586.so \
-    vendor/oneplus/guacamole/proprietary/odm/lib64/camera/com.qti.sensor.s5k3m5.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.s5k3m5.so \
     vendor/oneplus/guacamole/proprietary/odm/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin \
     vendor/oneplus/guacamole/proprietary/odm/lib64/camera/com.qti.sensormodule.ofilm_imx586.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.ofilm_imx586.bin \
     vendor/oneplus/guacamole/proprietary/odm/lib64/camera/com.qti.sensormodule.ofilm_s5k3m5.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.ofilm_s5k3m5.bin \
@@ -531,5 +527,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamole/proprietary/vendor/firmware/ringtone_Harping_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Harping_RTP.bin \
     vendor/oneplus/guacamole/proprietary/vendor/firmware/shuntai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/shuntai24k_rtp.bin \
     vendor/oneplus/guacamole/proprietary/vendor/firmware/t-jingle_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/t-jingle_RTP.bin \
-    vendor/oneplus/guacamole/proprietary/vendor/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wentai24k_rtp.bin \
-    vendor/oneplus/guacamole/proprietary/vendor/lib/hw/audio.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msmnile.so
+    vendor/oneplus/guacamole/proprietary/vendor/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wentai24k_rtp.bin
+
+PRODUCT_PACKAGES += \
+    audio.primary.msmnile \
+    com.qti.sensor.imx471 \
+    com.qti.sensor.imx481 \
+    com.qti.sensor.imx586 \
+    com.qti.sensor.s5k3m5
