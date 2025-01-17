@@ -9,7 +9,8 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.primary.msmnile",
+    name: "audio.primary.msmnile_odm",
+    stem: "audio.primary.msmnile",
     owner: "oneplus",
     strip: {
         none: true,
@@ -17,7 +18,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/hw/audio.primary.msmnile.so",
+                "proprietary/odm/lib/hw/audio.primary.msmnile.so",
             ],
             shared_libs: [
                 "libbase",
@@ -50,7 +51,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "32",
     relative_install_path: "hw",
     prefer: true,
-    soc_specific: true,
+    device_specific: true,
 }
 
 cc_prebuilt_library_shared {
